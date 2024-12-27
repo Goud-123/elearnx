@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElearnX Rewards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(to right, #6EACDA, #03346E);
+            border-bottom: 2px solid black;
+            padding: 1rem 2rem;
+        }
+
+        header .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo img {
+            height: 50px;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .navbar .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #ddd;
+        }
+
+        .rewards-section {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .rewards-section h1 {
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .reward {
+            display: inline-block;
+            width: 22%;
+            margin: 1%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .reward::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: none;
+            z-index: -1;
+            filter: blur(15px);
+        }
+
+        .reward::before {
+            box-shadow: 0 4px 30px rgba(0, 230, 255, 0.5), 0 4px 30px rgba(255, 0, 255, 0.5);
+        }
+
+        .reward img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .reward h3 {
+            color: #6EACDA;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        .reward p {
+            color: #666;
+        }
+
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+
+        .content h2 {
+            color: #333;
+        }
+
+        .content p {
+            color: #666;
+        }
+
+        .footer-section {
+                                background-color: #f0f0f0; /* Light grey background */
+                                padding: 40px;
+                            }
+                            
+                            .footer-lists {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                text-decoration: none;
+                            }
+                            
+                            .footer-lists div {
+                                flex: 1;
+                                margin: 20px;
+                                text-decoration: none;
+                            }
+                            
+                            .footer-lists h3 {
+                                font-size: 1.2em;
+                                color: black;
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                                text-decoration: none;
+                            }
+                            
+                            .footer-lists ul {
+                                list-style-type: none;
+                                padding: 0;
+                                text-decoration: none;
+                            }
+                            
+                            .footer-lists li {
+                                font-size: 1em;
+                                color: grey;
+                                margin-bottom: 5px;
+                                text-decoration: none;
+                            }
+                            
+                            .footer-lists li a {
+                                text-decoration: none; /* Remove underlines */
+                                color: grey; /* Ensure the text color is grey */
+                            }
+                            
+                            .footer-lists li a:hover {
+                                text-decoration: underline; /* Add underlines on hover if desired */
+                            }
+                            
+                            .footer-copyright {
+                                text-align: center;
+                                margin-top: 40px;
+                                text-decoration: none;
+                            }
+                            
+                            .footer-copyright p {
+                                font-size: 1em;
+                                color: grey;
+                                text-decoration: none;
+                            }
+                            
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://getrapl.com/asia/wp-content/uploads/sites/4/2023/05/sa.png" alt="ElearnX Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="rewards-section">
+        <div class="container">
+            <h1>Our Rewards</h1>
+            <div class="reward">
+                <img src="https://cdn.vectorstock.com/i/preview-1x/50/94/30-percent-discount-3d-mega-vector-42045094.jpg" alt="30% Discount">
+                <h3>30% Discount</h3>
+                <p>Get a 30% discount on your next course purchase.</p>
+            </div>
+            <div class="reward">
+                <img src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-certificate-document-achievement_516790-1771.jpg" alt="Free Hardcover Certificate">
+                <h3>Free Hardcover Certificate</h3>
+                <p>Receive a free hardcover certificate delivered to your home.</p>
+            </div>
+            <div class="reward">
+                <img src="https://th.bing.com/th/id/OIP.NaeKWwxdMwylYvKwdIV1GQHaE7?w=800&h=533&rs=1&pid=ImgDetMain" alt="Internship with Stipend">
+                <h3>Internship with Stipend</h3>
+                <p>Gain practical experience with a stipend-supported internship.</p>
+            </div>
+            <div class="reward">
+                <img src="https://india.perks.xoxoday.com/cdn/shop/products/phpylr2a6_jvtff9_1024x1024.png?v=1679445003" alt="Amazon Gift Voucher">
+                <h3>Amazon Gift Voucher</h3>
+                <p>Earn a ₹500 Amazon gift voucher.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container content">
+        <h2>30% Discount on Next Course Purchase</h2>
+        <p>As a token of our appreciation, ElearnX offers a 30% discount on your next course purchase. This reward encourages continuous learning and helps you save on your educational expenses. Enjoy more courses at a lower cost and continue to expand your knowledge and skills with us.</p>
+
+        <h2>Free Hardcover Certificate Home Delivery</h2>
+        <p>Complete your training with ElearnX and receive a prestigious hardcover certificate delivered straight to your doorstep. This certificate is a testament to your hard work and dedication, adding value to your professional portfolio and giving you a tangible reward for your achievements.</p>
+
+        <h2>Internship with Stipend</h2>
+        <p>At ElearnX, we believe in bridging the gap between learning and practical experience. Upon completing your training, you can secure an internship with a stipend. This opportunity allows you to apply your skills in real-world scenarios while earning a stipend to support your learning journey.</p>
+
+        <h2>₹500 Amazon Gift Voucher</h2>
+        <p>As a way of saying thank you for choosing ElearnX, we offer a ₹500 Amazon gift voucher to our students who complete their courses. Use this voucher to buy books, gadgets, or anything else that supports your education and personal growth. It's our way of giving back and ensuring you have the resources to succeed.</p>
+    </div>
+
+     <footer class="footer-section"> <div class="footer-lists"> <div> <h3>Get Started with AI</h3> <ul> <li>AWS & DLAI GenAI with LLMs Course</li> <li>DLAI AI For Everyone Course</li> <li>Google AI Essentials Course</li> <li>Google Cloud Introduction to Generative AI Course</li> <li>Google Prompting Essentials</li> <li>IBM AI Engineering Professional Certificate</li> <li>IBM Generative AI Fundamentals Specialization</li> <li>IBM Introduction to Artificial Intelligence (AI)</li> <li>Stanford AI in Healthcare Specialization</li> <li>DLAI Supervised Machine Learning: Regression and Classification</li> <li>Vanderbilt Prompt Engineering for ChatGPT Course</li> </ul> </div> <div> <h3>Popular Career Certificates</h3> <ul> <li>Adobe Content Creator Professional Certificate</li> <li>Google Cybersecurity Professional Certificate</li> <li>Google Data Analytics Professional Certificate</li> <li>Google Digital Marketing Professional Certificate</li> <li>Google IT Support Professional Certificate</li> <li>Google Project Management Professional Certificate</li> <li>Google UX Design Professional Certificate</li> <li>IBM Data Science Professional Certificate</li> <li>Meta Front-End Developer Professional Certificate</li> <li>Microsoft Power BI Data Analyst Professional Certificate</li> <li>All Career Certificates</li> </ul> </div> <div> <h3>Popular Subjects</h3> <ul> <li>Artificial Intelligence</li> <li>Cybersecurity</li> <li>Data Analytics</li> <li>Digital Marketing</li> <li>Generative AI</li> <li>Graphic Design</li> <li>Machine Learning</li> <li>Microsoft Excel</li> <li>Microsoft Power BI</li> <li>Project Management</li> <li>Python</li> <li>SQL</li> <li>All Courses</li> </ul> </div> <div> <h3>Popular Resources</h3> <ul> <li>High-Income Skills Worth Learning</li> <li>How to Get a PMP Certification</li> <li>Free IT Certifications and Courses</li> <li>Google Analytics Certification: Benefits and How to Get It</li> <li>Popular Cybersecurity Certifications</li> <li>Popular Data Analytics Certifications</li> <li>Popular IT Certifications</li> <li>What Does a Data Analyst Do?</li> <li>What Is the CAPM Certification</li> <li>Career Insights & Advice Hub</li> <li>Career Tools & Resource Hub</li> </ul> </div> </div> <div class="footer-copyright"> <p>&copy; 2024 Elearnx Elearnx Inc. All rights reserved.</p>
+
+</body>
+</html>
